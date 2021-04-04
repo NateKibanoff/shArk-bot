@@ -12,11 +12,11 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.strip()=="あ":
+    msg_full = message.content
+    msg = msg_full.strip()
+    if msg=="あ" or msg=="ㅏ" or msg=="아" or msg.lower()=="a" or msg == "ア":
         await message.add_reaction("🦈")
-    if message.content.strip().lower()=="a":
-        await message.add_reaction("🦈")
-    if message.content.find("🦈") > -1:
+    if msg_full.find("🦈") > -1:
         await message.add_reaction("🅰️")
 
 keep_alive()
