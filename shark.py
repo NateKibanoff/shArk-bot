@@ -12,6 +12,8 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    if message.content.strip()=="あ":
+        await message.add_reaction("🦈")
     if message.content.strip().lower()=="a":
         await message.add_reaction("🦈")
     if message.content.find("🦈") > -1:
