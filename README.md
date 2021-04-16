@@ -9,6 +9,8 @@ A Discord bot I made that reacts with the 🦈 emoji whenever someone sends `a`
   - The bot will also react if `A` is written in uppercase
 - When someone sends a message containing the 🦈 emoji, the bot reacts with 🅰
 - shArk bot supports Japanese and Korean characters (i.e. あ, ア, ㅏ, 아)
+- The bot has a 12.5% chance of sending the message "DID SOMEONE SAY FIREBALL?" when someone sends a message containing the word "fireball"
+- Similarly, shArk bot has a 25% chance of saying "DID SOMEONE SAY WRAITH LORD" when someone says "wraith lord" in his/her message
 
 ## Bot permissions
 - View Channels
