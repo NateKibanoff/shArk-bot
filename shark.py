@@ -2,6 +2,7 @@ import discord
 import os
 from keep_alive import keep_alive
 import random
+import re
 
 client = discord.Client()
 
@@ -17,7 +18,7 @@ async def on_message(message):
 		return
 	msg_full = message.content
 	rng = random.randint(1,8)
-	if msg_full.strip() in a:
+	if msg_full.strip() in a or re.search("^[Aa@あアㅏ아]+[h!?.]*$", msg_full.strip().lower()) is not None:
 		await message.add_reaction("🦈")
 	if msg_full.find("🦈") > -1:
 		await message.add_reaction("🅰️")
